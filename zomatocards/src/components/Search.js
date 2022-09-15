@@ -3,6 +3,8 @@ import Fooddata from './FoodData'
 import "./style.css"
 import Form from 'react-bootstrap/Form'
 import Cards from './Cards'
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import Set from './Set'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -60,13 +62,14 @@ const Search = () => {
         </Container>
       </Navbar>
     
-      
+      <MDBRow> 
             <div className="container d-flex justify-content-between align-items-center">
                
                 <h2 style={{ color: "#1b1464", cursor: "pointer" }} className="mt-3">Search Filter App</h2>
             </div>
+            </MDBRow> 
 
-           
+            <MDBRow> 
             <Form className='d-flex justify-content-center align-items-center mt-3'>
                 <Form.Group className=" mx-2 col-lg-4" controlId="formBasicEmail">
 
@@ -76,16 +79,25 @@ const Search = () => {
                 </Form.Group>
                 <button className='btn text-light col-lg-1' style={{ background: "#24014E" }}>Submit</button>
             </Form>
-
+            </MDBRow> 
             
-
+           
             <MDBRow> 
-                <MDBCol md ='2'>
-
+                <MDBCol md ='2' className="side_nav d-flex align-items-center">
+                <Card style={{ width: '10rem',height: '10rem',border:"none" }} className=" d-flex justify-content-space-evenly align-content-center">
+                    <Card.Body className='d-flexflex-direction-column align-items-center'>
+                    <Card.Text >
+                        <Button as="input" type="button" value="Dashboard" variant='side_button' />
+                        </Card.Text>
+                        <Card.Text>
+                        <Button as="input" type="button" value="Book Venue" variant='side_button' />
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
                 </MDBCol>
                 <MDBCol md='10'>
             <section className='iteam_section mt-4 container'>
-                <h2 className='px-4' style={{ fontWeight: 400 }}>Venues available</h2>
+                
                 
                 <div className="row mt-2 d-flex justify-content-around align-items-center">
                     {copydata && copydata.length ? <Cards data={copydata} /> : <Set  sdata={fdata}/>}
