@@ -15,7 +15,7 @@ const Search = () => {
     const chanegData = (e) => {
         let getchangedata = e.toLowerCase();
 
-        if (getchangedata == "") {
+        if (getchangedata === "") {
             setCopyData(fdata);
         } else {
             let storedata = copydata.filter((ele, k) => {
@@ -39,19 +39,25 @@ const Search = () => {
         <>
 
         
-      <Navbar bg="light" fixed="top">
+      <Navbar bg="light" fixed="top" className='search'>
         <Container>
           <Navbar.Brand href="#home">
+            
             <img
             
               alt=""
-              src="https://drive.google.com/uc?export=view&id=11YIhfZHQQKpS7bf7Fa9ogerKXdvJzh31"
-              width="30"
+
+              src="https://drive.google.com/uc?export=view&id=1Hj1rjs9d8mSbQp3LTRMkKh3Xwvck0QA2"
+              width="130"
+              height="50"
+
+              
+
               
               className="d-inline-block align-top"
 
             />{' '}
-            Celestial Biscuit IGDTUW
+
           </Navbar.Brand>
         </Container>
       </Navbar>
