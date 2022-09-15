@@ -18,7 +18,7 @@ const Cards = ({ data }) => {
                                     <div className="upper_data d-flex justify-content-between align-items-center">
                                         <span className='text_upper'>
                                             <h4 className='mt-2'>{element.rname}</h4>
-                                            <h5 className= 'address'>{element.address}</h5>
+                                            <h5 className= 'w-500 address'>{element.address}</h5>
                                         </span>
                                         
                                         

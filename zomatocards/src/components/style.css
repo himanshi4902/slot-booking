@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
 @import url('//db.onlinewebfonts.com/c/cf66d0978fea9f72cbd1604f28e7aadd?family=Equinox');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
   
@@ -46,7 +47,7 @@ body{
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-   
+    width: 200px;
     color: #706F6F;
 }
 .text_upper{
@@ -67,7 +68,7 @@ body{
     font-size: 13px;
     font-weight: 600;
     padding: 2px 1px;
-    width: 455px;
+    width: 3px;
     height: 5rem;
     right: -5rem;
 }
@@ -89,11 +90,54 @@ body{
 }
 .search{
     font-family: Equinox;
+    
 }
 /*Side NAv*/
 .side_nav{
     padding: 4rem 3rem 4rem 3rem;
      
+}
+.venue{
+    width: 900px;
+    height: 40px;
+}
+.btn-search_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 80px;
+    height: 40px;
+
+background: #FFFFFF;
+border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background-color: #24014E;
+    color: white;
+}
+.btn-filter_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 80px;
+    height: 40px;
+
+background: #FFFFFF;
+border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background-color: #24014E;
+    color: white;
 }
 
 .btn-side_button {

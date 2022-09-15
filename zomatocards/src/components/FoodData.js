@@ -12,7 +12,7 @@ const Fooddata = [
     },
     {
         id: 2,
-        rname: "Auditorium",
+        rname: "Buditorium",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
         address: "Main Gate, IGDTUW",
         delimg: "",
