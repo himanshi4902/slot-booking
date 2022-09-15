@@ -19,69 +19,60 @@ body{
 }
 
 .cd{
-    border-radius: 16px;
+    border-radius: 13px;
     margin-top: 20px;
     height: 16rem;
 }
 
 
-/* Book Button */    
-
+/*Card Text and button*/    
+.upper_data{
+    height: 5rem;;
+}
 
 .upper_data h4{
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
     font-size: 18px;
-    color: rgba(17,17,17,0.849);
+   
+    /* Text */
+    color: #24014E;
+
+}
+.address{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+   
+    color: #706F6F;
+}
+.text_upper{
+    font-size: 14px;
+    color: rgba(255, 6, 6, 0.849);
     letter-spacing: .5px;
     font-weight: 500;
 }
 
-.upper_data span{
 
+.purple{
+    display: flex;
+    align-items: center;
+    justify-content: right;
     border-radius: 6px;
-    color: rgb(211, 2, 2);
+    color: rgb(8, 6, 6);
     text-align: center;
     font-size: 13px;
     font-weight: 600;
     padding: 2px 1px;
     width: 455px;
-    height: 3rem;
+    height: 5rem;
     right: -5rem;
 }
-.purple{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
 
 
-.lower_data h5{
-    font-size: 15px;
-letter-spacing: .4px;
-font-weight: 400;
-color:rgba(17,17,17,0.849) ;
-}
-
-.lower_data span{
-    font-size: 15px;
-    letter-spacing: .4px;
-    color:rgba(17,17,17,0.849) ;
-}
-
-
-.last_data .limg{
-    width: 18px;
-}
-
-.last_data p{
-    font-size: 14px;
-    margin-top: 18px;
-    letter-spacing: .2px;
-    color: rgba(17,17,17,0.849);
-}
-
-.last_data .laimg{
-    width: 45px;
-}
 
 @media (max-width:600px){
     .con{

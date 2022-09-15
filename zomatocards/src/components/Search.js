@@ -6,7 +6,7 @@ import Cards from './Cards'
 import Set from './Set'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-
+import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 const Search = () => {
 
     const [fdata, setFdata] = useState(Fooddata);
@@ -37,8 +37,6 @@ const Search = () => {
 
     return (
         <>
-
-        
       <Navbar bg="light" fixed="top" className='search'>
         <Container>
           <Navbar.Brand href="#home">
@@ -61,13 +59,14 @@ const Search = () => {
           </Navbar.Brand>
         </Container>
       </Navbar>
-
+    
+      
             <div className="container d-flex justify-content-between align-items-center">
                
                 <h2 style={{ color: "#1b1464", cursor: "pointer" }} className="mt-3">Search Filter App</h2>
             </div>
 
-
+           
             <Form className='d-flex justify-content-center align-items-center mt-3'>
                 <Form.Group className=" mx-2 col-lg-4" controlId="formBasicEmail">
 
@@ -80,15 +79,20 @@ const Search = () => {
 
             
 
+            <MDBRow> 
+                <MDBCol md ='2'>
 
+                </MDBCol>
+                <MDBCol md='10'>
             <section className='iteam_section mt-4 container'>
                 <h2 className='px-4' style={{ fontWeight: 400 }}>Venues available</h2>
-
+                
                 <div className="row mt-2 d-flex justify-content-around align-items-center">
                     {copydata && copydata.length ? <Cards data={copydata} /> : <Set  sdata={fdata}/>}
                 </div>
             </section>
-            
+            </MDBCol>
+            </MDBRow> 
         </>
     )
 }
