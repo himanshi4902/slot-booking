@@ -12,17 +12,7 @@ const Cards = ({ data }) => {
                         <>
                             <Card style={{ width: '19rem',border:"none" }} className="hove mb-4">
                                 <Card.Img variant="top" className='cd' src={element.imgdata} />
-                                <style type="text/css">
-                                    {`
-                                .btn-book {
-                                background-color: #24014E;
-                                color: white;
-                                }
-                                .btn-book:hover {
-                                background-color: #24014E;
-                                }
-                            `}
-                            </style>
+                               
                                 <div className="card_body">
                                     <div className='info'>
                                     <div className="upper_data d-flex justify-content-between align-items-center">

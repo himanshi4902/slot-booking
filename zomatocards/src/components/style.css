@@ -90,3 +90,43 @@ body{
 .search{
     font-family: Equinox;
 }
+/*Side NAv*/
+.side_nav{
+    padding: 4rem 3rem 4rem 3rem;
+     
+}
+
+.btn-side_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 129px;
+    height: 47px;
+   
+    border-radius: 5px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background-color: #24014E;
+    color: white;
+}
+.btn-side_button:hover {
+   
+    background-color: white;
+    background: #24014E;
+    /* Inside auto layout */
+    
+   
+}
+
+.btn-book {
+    background-color: #24014E;
+    color: white;
+    }
+    .btn-book:hover {
+    background-color: #24014E;
+    }
