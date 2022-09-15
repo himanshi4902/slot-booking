@@ -46,13 +46,14 @@ const Search = () => {
             <img
             
               alt=""
-              src="https://drive.google.com/uc?export=view&id=11YIhfZHQQKpS7bf7Fa9ogerKXdvJzh31"
-              width="30"
+              src="https://drive.google.com/uc?export=view&id=1Hj1rjs9d8mSbQp3LTRMkKh3Xwvck0QA2"
+              width="130"
+              height="50"
               
               className="d-inline-block align-top"
 
             />{' '}
-            Celestial Biscuit IGDTUW
+          
           
           </Navbar.Brand>
         </Container>

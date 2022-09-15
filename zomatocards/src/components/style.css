@@ -25,7 +25,8 @@ body{
 }
 
 
-    
+/* Book Button */    
+
 
 .upper_data h4{
     font-size: 18px;
@@ -43,14 +44,13 @@ body{
     font-weight: 600;
     padding: 2px 1px;
     width: 455px;
-    height: 4rem;
+    height: 3rem;
     right: -5rem;
 }
 .purple{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: right;
 }
 
 

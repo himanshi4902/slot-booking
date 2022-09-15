@@ -11,7 +11,7 @@ const Fooddata = [
         arrimg: ""
     },
     {
-        id: 1,
+        id: 2,
         rname: "Auditorium",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
         address: "Main Gate, IGDTUW",
