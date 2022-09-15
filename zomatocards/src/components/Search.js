@@ -9,6 +9,8 @@ import Set from './Set'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import "react-step-progress-bar/styles.css";
+import StepProgressBar from "react-step-progress";
 const Search = () => {
 
     const [fdata, setFdata] = useState(Fooddata);
@@ -36,7 +38,10 @@ const Search = () => {
         }, 3000);
 
     }, [])
-
+const step1Content = <h1></h1>;
+  const step2Content = <h1></h1>;
+  const step3Content = <h1></h1>;
+ 
     return (
         <>
       <Navbar bg="light" fixed="top" className='search'>
@@ -68,18 +73,30 @@ const Search = () => {
                 <h2 style={{ color: "#1b1464", cursor: "pointer" }} className="mt-3">Search Filter App</h2>
             </div>
             </MDBRow> 
-
-            <MDBRow> 
-            <Form className='d-flex justify-content-center align-items-center mt-3'>
+       
+            <MDBRow>
+                <MDBCol md ='8'>
+            <Form className='d-flex justify-content-center align-items-center mt-3 venue'>
                 <Form.Group className=" mx-2 col-lg-4" controlId="formBasicEmail">
 
                     <Form.Control type="text"
                         onChange={(e) => chanegData(e.target.value)}
                         placeholder="Search Venue" />
                 </Form.Group>
-                <button className='btn text-light col-lg-1' style={{ background: "#24014E" }}>Submit</button>
+                <Button as="input" type="button" value="Search" variant='search_button' />
             </Form>
+            </MDBCol>
+            <MDBCol md ='4'>
+            <Button as="input" type="button" value="Filter" variant='filter_button mt-3' />
+            </MDBCol>
             </MDBRow> 
+
+            <MDBRow>
+            <div className="Progres_Bar">
+      
+      </div>
+
+      </MDBRow>
             
            
             <MDBRow> 
