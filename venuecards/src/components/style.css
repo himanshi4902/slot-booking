@@ -29,6 +29,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    
   }
   .stepper-item {
     position: relative;
@@ -111,8 +112,9 @@ body{
   .next_progress{
     background-color: white;
   }
+
 .navbar_backspace{
-    height: 7rem;
+    height: 5px;
 }
 /* Progress Bar */
 
