@@ -18,12 +18,104 @@ body{
     box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
     transition: .2s;
 }
-
 .cd{
     border-radius: 13px;
     margin-top: 20px;
     height: 16rem;
 }
+
+.stepper-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  
+@media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 40%;
+    top: 20px;
+    left: -20%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #24014E;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active {
+    font-weight: bold;
+    background-color: #E6E4ED;
+  }
+  
+  .stepper-item.completed .step-counter {
+    background: #24014E;
+    color: white;
+  }
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #24014E;
+    width: 40%;
+    top: 20px;
+    left: 80%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+  .step-counter{
+    color: white;
+  }
+  .progress_label{
+    color: #24014E;
+  }
+  .next_progress{
+    background-color: white;
+  }
+.navbar_backspace{
+    height: 7rem;
+}
+/* Progress Bar */
+
 
 
 /*Card Text and button*/    
