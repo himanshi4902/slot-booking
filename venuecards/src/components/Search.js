@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Fooddata from './FoodData'
+import Venuedata from './venueData'
 import "./style.css"
 import Form from 'react-bootstrap/Form'
 import Cards from './Cards'
@@ -9,11 +9,10 @@ import Set from './Set'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
-import "react-step-progress-bar/styles.css";
-import StepProgressBar from "react-step-progress";
+
 const Search = () => {
 
-    const [fdata, setFdata] = useState(Fooddata);
+    const [fdata, setFdata] = useState(Venuedata);
     const [copydata, setCopyData] = useState([]);
 
     const chanegData = (e) => {
@@ -34,14 +33,11 @@ const Search = () => {
     useEffect(() => {
 
         setTimeout(() => {
-            setCopyData(Fooddata);
+            setCopyData(Venuedata);
         }, 3000);
 
     }, [])
-const step1Content = <h1></h1>;
-  const step2Content = <h1></h1>;
-  const step3Content = <h1></h1>;
- 
+
     return (
         <>
       <Navbar bg="light" fixed="top" className='search'>

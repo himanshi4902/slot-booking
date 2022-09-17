@@ -1,4 +1,4 @@
-const Fooddata = [
+const Venuedata = [
     {
         id: 1,
         rname: "Auditorium",
@@ -90,4 +90,4 @@ const Fooddata = [
     
 ];
 
-export default Fooddata;
+export default Venuedata;
