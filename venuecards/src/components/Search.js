@@ -45,18 +45,11 @@ const Search = () => {
           <Navbar.Brand href="#home">
             
             <img
-            
               alt=""
-
               src="https://drive.google.com/uc?export=view&id=1Hj1rjs9d8mSbQp3LTRMkKh3Xwvck0QA2"
               width="130"
               height="50"
-
-              
-
-              
               className="d-inline-block align-top"
-
             />{' '}
 
           </Navbar.Brand>
@@ -95,8 +88,8 @@ const Search = () => {
             
                 
             </MDBRow>
-            <MDBRow>
-                <MDBCol md ='8'>
+            <MDBRow >
+                <MDBCol md ='8' >
             <Form className='d-flex justify-content-center align-items-center mt-3 venue'>
                 <Form.Group className=" mx-2 col-lg-4" controlId="formBasicEmail">
 
@@ -120,12 +113,12 @@ const Search = () => {
       </MDBRow>
             
            
-            <MDBRow> 
-                <MDBCol md ='2' className="side_nav d-flex align-items-center">
+            <MDBRow > 
+                <MDBCol md ='2' className="side_nav d-flex sticky-sm-top"  >
                 <Card style={{ width: '10rem',height: '10rem',border:"none" }} className=" d-flex justify-content-space-evenly align-content-center">
                     <Card.Body className='d-flexflex-direction-column align-items-center'>
                     <Card.Text >
-                        <Button as="input" type="button" value="Dashboard" variant='side_button' />
+                        <Button as="input" type="button" value="Dashboard" variant='side_button_disable' />
                         </Card.Text>
                         <Card.Text>
                         <Button as="input" type="button" value="Book Venue" variant='side_button' />
