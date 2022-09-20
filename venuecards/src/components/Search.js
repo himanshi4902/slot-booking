@@ -40,30 +40,34 @@ const Search = () => {
 
     return (
         <>
-            <Navbar bg="light" fixed="top" className='search'>
-                <Container>
-                    <Navbar.Brand href="#home">
-
-                        <img
-
-                            alt=""
-
-                            src="https://drive.google.com/uc?export=view&id=1Hj1rjs9d8mSbQp3LTRMkKh3Xwvck0QA2"
-                            width="130"
-                            height="50"
 
 
+      <Navbar bg="light" fixed="top" className='search'>
+        <Container>
+          <Navbar.Brand href="#home">
+            
+            <img
+              alt=""
+              src="https://drive.google.com/uc?export=view&id=1Hj1rjs9d8mSbQp3LTRMkKh3Xwvck0QA2"
+              width="130"
+              height="50"
+              className="d-inline-block align-top"
+            />{' '}
 
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+      <MDBRow>
+                    <div className="stepper-wrapper">
+                <div className="stepper-item completed">
+                <div className="step-counter">1</div>
+                <div className="step-name progress_label">Select Venue</div>
+                </div>
+                <div class="stepper-item active">
+        <div class="step-counter">2</div>
+        <div class="step-name">Slot Booking</div>
+      </div>
 
-                            className="d-inline-block align-top"
-
-                        />{' '}
-
-                    </Navbar.Brand>
-                </Container>
-            </Navbar>
-            <MDBRow sm="9" >
-                <div className="navbar_backspace d-flex justify-content-between align-items-center">
                 </div>
             </MDBRow>
 
@@ -81,6 +85,7 @@ const Search = () => {
 
 
             </MDBRow>
+
             <MDBRow>
                 <MDBCol md='8'>
                     <Form className='d-flex justify-content-center align-items-center mt-3 venue'>
@@ -118,6 +123,7 @@ const Search = () => {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+
                 </MDBCol>
                 <MDBCol md='10'>
                     <section className='iteam_section mt-4 container'>
