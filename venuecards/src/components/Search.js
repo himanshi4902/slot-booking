@@ -57,19 +57,12 @@ const Search = () => {
           </Navbar.Brand>
         </Container>
       </Navbar>
-      <MDBRow>
-                    <div className="stepper-wrapper">
-                <div className="stepper-item completed">
-                <div className="step-counter">1</div>
-                <div className="step-name progress_label">Select Venue</div>
-                </div>
-                <div class="stepper-item active">
-        <div class="step-counter">2</div>
-        <div class="step-name">Slot Booking</div>
-      </div>
+  
+            <MDBRow sm="9" > 
+            <div className="navbar_backspace d-flex justify-content-between align-items-center">
+            </div>
+            </MDBRow> 
 
-                </div>
-            </MDBRow>
 
             <MDBRow>
                 <div className="stepper-wrapper">
