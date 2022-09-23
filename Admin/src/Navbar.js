@@ -11,10 +11,12 @@ const [open, setOpen] = useState(false);
     return (
     <nav class="navbar bg-light out-nav">
         <div class="container-fluid">
-            <img src={logo} className="cb-logo" height={25} width={25} />
+            <img src={logo} className="logo" alt=""/>
+            <img src={cb} className="cb" alt=""/>
             <div className='menu-containered'>
                 <div className='menu-triggered' onClick={()=>{setOpen(!open)}}>
-                    <img src={logo} />
+                    <span className="Adname"> Admin Name</span>
+                    <img src={admin} className="admin" alt=""/>
                 </div>
                 <div className={`dropdown-menues ${open? 'active':'inactive'}`}>
                     <h6> Celestial </h6>

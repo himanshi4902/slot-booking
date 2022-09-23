@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import { Modal, ModalHeader } from "reactstrap";
+import ListEle from '../ListEle';
+
 
 export default function PopUp(){
 
@@ -53,17 +55,26 @@ export default function PopUp(){
                         </div>
                     </div>
                 </Modal>
-                <div>
-                    <button className='btn mt-3 list-item' onClick={()=>setmodal(true)}>
-                        List item
-                    </button>
-                    <button className='btn mt-3 list-item' onClick={()=>setmodal(true)}>
-                        List item
-                    </button>
-                    <button className='btn mt-3 list-item' onClick={()=>setmodal(true)}>
-                        List item
-                    </button>
+
+                <button className='btn mt-3 list-item' onClick={()=>setmodal(true)}>
+                    <ListEle />
+                </button>
+                <button className='btn mt-3 list-item' onClick={()=>setmodal(true)}>
+                    <ListEle />
+                </button>
+                <button className='btn mt-3 list-item' onClick={()=>setmodal(true)}>
+                    <ListEle />
+                </button>
+                <button className='btn mt-3 list-item' onClick={()=>setmodal(true)}>
+                    <ListEle />
+                </button>
+                <button className='btn mt-3 list-item' onClick={()=>setmodal(true)}>
+                    <ListEle />
+                </button>
+                <button className='btn mt-3 list-item' onClick={()=>setmodal(true)}>
+                    <ListEle />
+                </button>
+                
             </div>
-        </div>
-    )
+     )
 }
