@@ -3,8 +3,17 @@ import Input from "./Components/Input";
 import Button from "./Components/Button"
 
 function App(){
-    return <MainContent>
-      <Helloadmin>Register Here!</Helloadmin>
+    return <div>
+
+    <div className="leftside">
+      <div className="content">
+        <h1 className="text">Are you</h1>
+        <h1 className="text">an Admin?</h1>
+        <button className="admin">Admin Login</button>
+      </div>
+    </div>
+    <MainContent>
+      <Helloadmin>Hello Student!!</Helloadmin>
       <InputContainer>
       <Input type="text"  placeholder="Email" />
       <Input type="password"  placeholder= "Password" />
@@ -12,27 +21,34 @@ function App(){
       </InputContainer>
       <Forgotpassword>forgot password?</Forgotpassword>
       <ButtonContainer className="buttoncontainer">
-        <Button content="Sign up" />
+        <Button content="Login" />
       </ButtonContainer>
      <HorizontalRule/>
-     <Forgotpassword>Already Have an Account?</Forgotpassword>
+     <Register>Register Here</Register>
      <ButtonContainer>
-      <Button content= "Login"/>
+      <Button content= "Sign Up"/>
      </ButtonContainer>
     </MainContent>
+    </div>
 }
    const MainContent = styled.div`
+            
+            box-sizing:border-box;
+
             display:flex;
-            align-items : center;
             flex-direction:column;
-            height: 90vh;
+            justify-content:center;
+            align-items : center;
+            padding:10px 30px;
+            position:absolute;
             width:27vw;
-            background: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            backdrop-filter:blur(8.5px);
-            border-radius: 10px;
-            color: rgb(57, 4, 121);
-            letter-spacing: 0.4rem;
+            height: 90vh;
+            left:870px;
+            top:90px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0.14) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            border-radius:40px;
           `;
   const Helloadmin = styled.h2`
            margin: 3rem 0 2rem 0;
@@ -43,32 +59,45 @@ function App(){
            flex-direction:column;
            justify-content: center;
            align-items: center;
-           height: 20%;
-           width: 100%;
-           gap:12px;
+           padding:20px 30px;
+           gap:10px;
+
+           width: 120%;
+           height:24%; 
+           border-radius: 50px;
      `;
   
  const Forgotpassword =styled.h5`
+             margin:2rem;
              cursor :pointer;  
              align-items:center;
              justify-content:center;
      `;
 
   const ButtonContainer= styled.div`
-          margin:0;
-          width: 100%;
           display: flex;
-          align-items: center;
           justify-content:center;
+          align-items: center;
+          gap:10px;
+          width: 120%;
+          height:24%;
   `;
   
   const HorizontalRule = styled.hr`
+         position:relative;
          width:90%;
-         height:0.3rem;
-         border-radius:0.3rem;
-         border:none;
-         margin: 1.5rem 0 1rem 0;
-         background: linear-gradient(to right , #390479 0%, #390479 79%);
-         backdrop-filter:blur(25px);
+         height:0.5rem;
+         border-radius:black;
+         background:#24014E;
+  `;
+
+  const Register= styled.div`
+          display:flex;
+          justify-content:center;
+          align-items: center;
+          width: 140%;
+          height:30%;
+          font-size:large;
+          color:black;
   `;
 export default App;
