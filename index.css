@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url('./Image/Admin.png');
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.InputText{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
