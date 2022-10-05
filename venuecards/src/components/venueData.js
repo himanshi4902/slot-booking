@@ -23,7 +23,7 @@ const Venuedata = [
     },
     {
         id: 3,
-        rname: "Auditorium",
+        rname: "Seminar Hall",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
         address: "Main Gate, IGDTUW",
         delimg: "",
@@ -34,7 +34,7 @@ const Venuedata = [
     },
     {
         id: 4,
-        rname: "Auditorium",
+        rname: "E-213",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
         address: "Main Gate, IGDTUW",
         delimg: "",
@@ -45,7 +45,7 @@ const Venuedata = [
     },
     {
         id: 5,
-        rname: "Auditorium",
+        rname: "E-214",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
         address: "Main Gate, IGDTUW",
         delimg: "",
@@ -56,7 +56,7 @@ const Venuedata = [
     },
     {
         id: 6,
-        rname: "Auditorium",
+        rname: "E-315",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
         address: "Main Gate, IGDTUW",
         delimg: "",
@@ -67,7 +67,7 @@ const Venuedata = [
     },
     {
         id: 7,
-        rname: "Auditorium",
+        rname: "E-214",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
         address: "Main Gate, IGDTUW",
         delimg: "",
@@ -87,17 +87,7 @@ const Venuedata = [
         rating: "",
         arrimg: ""
     },
-    {
-        id: 9,
-        rname: "Auditorium",
-        imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
-        address: "Main Gate, IGDTUW",
-        delimg: "",
-        somedata: "Can house upto 1000 people",
-        price: "",
-        rating: "",
-        arrimg: ""
-    },
+   
 ];
 
 export default Venuedata;

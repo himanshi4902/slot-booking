@@ -25,7 +25,7 @@ function App() {
     <>
       <Navbar />
       <div className='wh-body'>
-        <h4>Welcome Clelestial !</h4>
+        <h4 className='welcome'>Welcome Celestial !</h4>
         <div className="cont">
           <Inbar />
           {component}
